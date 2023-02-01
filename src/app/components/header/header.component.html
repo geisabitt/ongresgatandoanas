@@ -1,0 +1,39 @@
+<nav class="container-fluid header">
+  <ul class="nav-list">
+    <li class="nav-item"><a routerLink="/sobre">Sobre</a></li>
+    <li class="nav-item"><a routerLink="/cursos">Cursos</a></li>
+    <li>
+      <a routerLink="/"
+        ><h3 class="title_cursive">
+          Resgatando Anas
+          <h4 class="title-menu">
+            Mulher, você é <span class="destaque">terra fértil</span>
+          </h4>
+        </h3></a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        href="https://geisabitt.github.io/LandingPageAnas/index.html"
+        target="_blank"
+        >Retiro</a
+      >
+    </li>
+    <li class="nav-item"><a routerLink="/apoie">Seja Apoiador</a></li>
+  </ul>
+  <mat-icon [matMenuTriggerFor]="menu" id="btn-mobile" class="destaque"
+    >menu</mat-icon
+  >
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item><a routerLink="/sobre">Sobre</a></button>
+    <button mat-menu-item><a routerLink="/cursos">Cursos</a></button>
+    <button mat-menu-item>
+      <a
+        href="https://geisabitt.github.io/LandingPageAnas/index.html"
+        target="_blank"
+        >Retiro</a
+      >
+    </button>
+    <button mat-menu-item><a routerLink="/apoie">Seja Apoiador</a></button>
+  </mat-menu>
+</nav>

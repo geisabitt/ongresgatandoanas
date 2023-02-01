@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color:#0D0D0D ;
+}
+
+html, body { height: 100%; }
+body { margin: 0;  }
+.container-fluid{
+  width: 100%;
+}
+.container{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px 0;
+}
+.title_cursive{
+  font-family: 'Ms Madi', sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+}
+.title, .title span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.slogan{
+  width: 300px;
+  margin: 0 auto;
+}
+.img_logo{
+  width: 80%;
+  margin: 0 auto;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 728px){
+  *{
+    font-size: 22px;
+  }
+  .title_cursive{
+    font-family: 'Ms Madi', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .title, .title span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .img_logo{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 420px){
+  .title_cursive{
+    letter-spacing: -0.4px;
+  }
+  .container{
+    flex-direction: column;
+    justify-items: center;
+  }
+  .title span{
+    display: block;
+  }
+}

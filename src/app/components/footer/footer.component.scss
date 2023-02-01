@@ -1,0 +1,21 @@
+div, h3, h2{
+  margin-bottom: 10px;
+}
+h3{
+  font-weight: bold;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.title{
+  width: 100%;
+}
+.logo, .informacoes_footer{
+  width: 49%;
+}
+@media(max-width:420px){
+  .title, .logo, .informacoes_footer{
+    width: 100%;
+  }
+}
