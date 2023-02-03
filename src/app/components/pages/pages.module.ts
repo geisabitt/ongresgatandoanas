@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 
+import { AppModule } from '../../app.module';
 import { ApoieComponent } from './apoie/apoie.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
-import { PagesRoutingModule } from './pages-routing.module';
 import { SobreComponent } from './sobre/sobre.component';
 
 @NgModule({
@@ -14,6 +15,6 @@ import { SobreComponent } from './sobre/sobre.component';
     SobreComponent,
     ApoieComponent,
   ],
-  imports: [CommonModule, PagesRoutingModule],
+  imports: [CommonModule, SharedModule, AppModule],
 })
 export class PagesModule {}

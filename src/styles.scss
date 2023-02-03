@@ -42,6 +42,21 @@ body { margin: 0;  }
   font-size: 32px;
   font-weight: 400;
 }
+.title_line, .title_line span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: relative;
+  color: #7D0E31;
+  margin-bottom: 20px;
+  &::before{
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #7D0E31;
+    width: 600px;
+    bottom: 0;
+  }
+}
 .slogan{
   width: 300px;
   margin: 0 auto;
@@ -54,7 +69,43 @@ body { margin: 0;  }
   display: flex;
   justify-content: center;
 }
-
+.btn_claro{
+  background-color: #FFF5F9;
+  color: #7D0E31;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  &:hover{
+    background-color: #FFA4C5;
+  }
+}
+.btn_vazado{
+  background-color: transparent;
+  border: 3px solid #FF8AAF;
+  padding: 4px 8px;
+  color: #7D0E31;
+  border-radius: 10px;
+  &:hover{
+    background-color: #FFA4C5;
+  }
+}
+.btn_rosa{
+  background-color: #FF8AAF;
+  color: #7D0E31;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  &:hover{
+    background-color: #FFA4C5;
+  }
+}
+.container_button{
+  padding: 40px 0;
+  width: 100%;
+  a{
+    float: right;
+  }
+}
 
 @media (max-width: 728px){
   *{

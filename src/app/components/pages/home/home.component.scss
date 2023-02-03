@@ -1,3 +1,58 @@
+.img_circle{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+.idealizadora{
+  font-size: 24px;
+}
+
+
 #sobre_home{
   background-color: #FF8AAF;
+  display: flex;
+  flex-wrap: wrap;
+
+  p{max-width: 600px;
+    color: #7D0E31;}
+
+  .container{
+    padding: 100px 0;
+  }
 }
+.btn_claro{
+  font-size: 24px;
+}
+.ajuste{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.img_retiro{
+  padding: 0 20px;
+}
+#atividades{
+  display: flex;
+  flex-wrap: wrap;
+  .title_line::before{
+  left: 1%;
+  margin-left: -150px;
+  }
+}
+.container_card{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap:20px;
+  img{
+    width: 100%;
+  }
+}
+.card{
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+}
+
+
