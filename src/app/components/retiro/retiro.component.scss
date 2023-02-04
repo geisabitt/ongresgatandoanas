@@ -11,9 +11,40 @@
     }
   }
 }
+.pc{
+  display: flex;
+  width: 49%;
+}
+.mobile{
+  display: none;
+}
 
 img{
   width: 90%;
   z-index: 2;
   margin: 0 auto;
+}
+@media(max-width:420px){
+  #retiro{
+    display: flex;
+    flex-wrap: wrap;
+    .container{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .container_button{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .pc{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+    padding: 20px 0;
+  }
+
 }
