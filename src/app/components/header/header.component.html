@@ -1,7 +1,7 @@
 <nav class="container-fluid header">
   <ul class="nav-list">
     <li class="nav-item"><a routerLink="/sobre">Sobre</a></li>
-    <li class="nav-item"><a routerLink="/cursos">Cursos</a></li>
+    <li class="nav-item"><a routerLink="/atividades">Cursos</a></li>
     <li>
       <a routerLink="/"
         ><h3 class="title_cursive">
@@ -20,7 +20,7 @@
       >
     </li>
     <li class="nav-item">
-      <a class="btn_vazado" routerLink="/apoie">Seja Apoiador</a>
+      <a class="btn_vazado" routerLink="/sejaApoiador">Seja Apoiador</a>
     </li>
   </ul>
   <mat-icon [matMenuTriggerFor]="menu" id="btn-mobile" class="destaque"
@@ -28,7 +28,7 @@
   >
   <mat-menu #menu="matMenu">
     <button mat-menu-item><a routerLink="/sobre">Sobre</a></button>
-    <button mat-menu-item><a routerLink="/cursos">Cursos</a></button>
+    <button mat-menu-item><a routerLink="/atividades">Cursos</a></button>
     <button mat-menu-item>
       <a
         href="https://geisabitt.github.io/LandingPageAnas/index.html"
@@ -36,6 +36,8 @@
         >Retiro</a
       >
     </button>
-    <button mat-menu-item><a routerLink="/apoie">Seja Apoiador</a></button>
+    <button mat-menu-item>
+      <a routerLink="/sejaApoiador">Seja Apoiador</a>
+    </button>
   </mat-menu>
 </nav>

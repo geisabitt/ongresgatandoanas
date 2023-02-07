@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ApoieComponent } from './apoie.component';
+import { SejaApoiadorComponent } from './seja-apoiador.component';
 
-describe('ApoieComponent', () => {
-  let component: ApoieComponent;
-  let fixture: ComponentFixture<ApoieComponent>;
+describe('SejaApoiadorComponent', () => {
+  let component: SejaApoiadorComponent;
+  let fixture: ComponentFixture<SejaApoiadorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ApoieComponent ]
+      declarations: [ SejaApoiadorComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ApoieComponent);
+    fixture = TestBed.createComponent(SejaApoiadorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

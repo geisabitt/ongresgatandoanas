@@ -1,0 +1,25 @@
+.example-card {
+  max-width: 400px;
+  width: 100%;
+}
+
+.example-header-image {
+  background-image: url('https://www.wikihow.com/images_en/thumb/2/2c/Finish-off-Crochet-Step-1-Version-4.jpg/550px-nowatermark-Finish-off-Crochet-Step-1-Version-4.jpg');
+  background-size: cover;
+}
+.container_atividades{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 50px 0;
+}
+mat-card{
+  margin: 20px;
+  background-color:#FFD9EB;
+}
+mat-card-actions{
+  justify-content: center;
+}

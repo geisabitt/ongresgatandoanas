@@ -1,0 +1,29 @@
+<div *ngIf="dataSource.length > 0; else noAtividades">
+  <div class="container_atividades">
+    <mat-card *ngFor="let data of dataSource" class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ data.nome }}</mat-card-title>
+        <mat-card-subtitle>{{ data.tipo }}</mat-card-subtitle>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="https://imagens-revista.vivadecora.com.br/uploads/2020/07/guardanapo-de-croche-redondo-pinterest.jpg"
+        alt="foto caminho de mesa de crochê"
+      />
+      <mat-card-content>
+        <p>{{ data.descricao }}</p>
+        <p>Valor: R${{ data.valor }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="primary">Se inscrever</button>
+        <button mat-button color="accent">Compartilhar</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+<ng-template #noAtividades>
+  <h3>Não há atividades cadastradas!</h3>
+  <h4>Página em construção</h4>
+</ng-template>
