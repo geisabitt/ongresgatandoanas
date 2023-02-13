@@ -1,6 +1,6 @@
-<div *ngIf="dataSource.length > 0; else noAtividades">
+<div *ngIf="cursos === null; else noAtividades">
   <div class="container_atividades">
-    <mat-card *ngFor="let data of dataSource" class="example-card">
+    <mat-card *ngFor="let data of cursos | async" class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>{{ data.nome }}</mat-card-title>

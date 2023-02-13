@@ -1,74 +1,8 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
-export interface PeriodicElement {
-  nome: string;
-  tipo: string;
-  descricao: string;
-  valor: string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-  {
-    nome: 'crochê',
-    tipo: 'artesanato',
-    descricao: 'curso de artesanato manual',
-    valor: '10,00',
-  },
-];
+import { Cursos } from '../model/cursos';
+import { CursosService } from './../service/cursos.service';
 
 @Component({
   selector: 'app-atividades',
@@ -76,6 +10,13 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./atividades.component.scss'],
 })
 export class AtividadesComponent {
+  cursos$: Observable<Cursos[]>;
+  cursos: Cursos[] = [];
   displayedColumns: string[] = ['nome', 'tipo', 'descricao', 'valor'];
-  dataSource = ELEMENT_DATA;
+
+  constructor(private cursosService: CursosService) {
+    this.cursos$ = this.cursosService.list();
+
+    this.cursosService.list().subscribe((cursos) => (this.cursos = cursos));
+  }
 }
